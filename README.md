@@ -21,7 +21,7 @@ So I decided to take matters into my own hands and hack up this little script th
 
 The script depends on `requests` and `faker`, which need to be installed.
 
-1. `pip install -m requirements.txt`
+1. `pip install -r requirements.txt`
 2. Edit in the malicious webhook in `thwart_tokenmonster.py`
 3. `python thwart_tokenmonster.py`
 4. Sit back, relax and enjoy the show
