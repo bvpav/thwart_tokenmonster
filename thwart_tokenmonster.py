@@ -9,6 +9,7 @@ import requests
 from faker import Faker
 
 WEBHOOK_URL = '<ENTER WEBHOOK URL HERE>'
+DO_DELETE_WEBHOOK = True
 
 faker = Faker()
 num_requests = 0
@@ -91,6 +92,14 @@ def send_data(data):
         print(f'[-] Successfully sent request #{num_requests}')
 
 
+def delete_webhook():
+    print('[-] Deleting webhook...')
+    response = requests.delete(WEBHOOK_URL)
+    if 200 <= response.status_code < 300:
+        # XXX: idk what [-] and [*] mean, they just look cool
+        print(f'[-] Successfully deleted webhook {WEBHOOK_URL}')
+
+
 def main():
     try:
         while True:
@@ -100,6 +109,8 @@ def main():
         # XXX: idk what [-] and [*] mean, they just look cool
         # \r to erase the ^C in my terminal
         print(f'\r[*] Sent {num_requests} request(s) to fraudulent webhook')
+        if DO_DELETE_WEBHOOK:
+            delete_webhook()
 
 
 if __name__ == '__main__':

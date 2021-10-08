@@ -1,6 +1,6 @@
 # Thwart Token Monster
 
-A simple script that floods ongoing malicious token grabbing operations that use [:alien: Token Monster](https://github.com/Atom345/TokenMonster/blob/main/README.md) with fake data.
+A simple script that floods and disables ongoing malicious token grabbing operations that use [:alien: Token Monster](https://github.com/Atom345/TokenMonster/blob/main/README.md) with fake data.
 
 ## :book: Backstory
 
@@ -16,6 +16,7 @@ So I decided to take matters into my own hands and hack up this little script th
 - Propagates fake full name, phone number, email, IP and MAC address.
 - Synthesizes somewhat-beliavable system information.
 - Attacker doesn't get any personally identifiable information because of the nature of Discord Webhooks.
+- Deletes the webhook when it's done spamming.
 
 ## :coffee: Usage instructions
 
@@ -25,9 +26,11 @@ The script depends on `requests` and `faker`, which need to be installed.
 2. Edit in the malicious webhook in `thwart_tokenmonster.py`
 3. `python thwart_tokenmonster.py`
 4. Sit back, relax and enjoy the show
+5. Terminate the script and the webhook will automatically be deleted.
 
 ## :pushpin: TODO
 
+- [X] Delete the webhook on exit
 - [ ] Improve generated system information
     - [ ] Use only existing `processor` strings
     - [ ] Make `platform_version` yield more believable strings
