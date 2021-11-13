@@ -1,12 +1,12 @@
 # Thwart Token Monster
 
-A simple script that floods and disables ongoing malicious token grabbing operations that use [:alien: Token Monster](https://github.com/Atom345/TokenMonster/blob/main/README.md) with fake data.
+A simple script that floods and disables ongoing malicious token grabbing operations that use [:alien: Token Monster](https://github.com/Galaxzy345/TokenMonster/blob/main/README.md) with fake data.
 
 ## :book: Backstory
 
-One day, some guy joined a Discord server I was in and straight up just uploaded a [Token Monster](https://github.com/Atom345/TokenMonster/blob/main/README.md) token logger, with their own webhook edited at the top, perhaps hoping to snipe some tokens and system information.
+One day, some guy joined a Discord server I was in and straight up just uploaded a [Token Monster](https://github.com/Galaxzy345/TokenMonster/blob/main/README.md) token logger, with their own webhook edited at the top, perhaps hoping to snipe some tokens and system information.
 
-According to [the author of Token Monster](https://github.com/Atom345/TokenMonster/blob/main/README.md#mega-just-a-note), the script was intended for educational purposes and they _highly discourage using [it] against someone else_. Unfortunately, that doesn't prevent anybody from actually doing so.
+According to [the author of Token Monster](https://github.com/Galaxzy345/TokenMonster/blob/main/README.md#mega-just-a-note), the script was intended for educational purposes and they _highly discourage using [it] against someone else_. Unfortunately, that doesn't prevent anybody from actually doing so.
 
 So I decided to take matters into my own hands and hack up this little script that floods the _1337 pwnz0r_'s webhook with thousands of _fake, but real-looking token and system captures_ that will hopefully make the life of the script kiddie slightly more miserable than it already is :heart:
 
@@ -39,9 +39,9 @@ The script depends on `requests` and `faker`, which need to be installed.
 
 ### :pray: Acknowledgments
 
-Token Monster was created by [AtomDev](https://github.com/Atom345).
+Token Monster was created by [Galaxzy](https://github.com/Galaxzy345).
 
-README was inspired by [Token Monster's](https://github.com/Atom345/TokenMonster/blob/main/README.md)
+README was inspired by [Token Monster's](https://github.com/Galaxzy345/TokenMonster/blob/main/README.md)
 
 ## License
 
